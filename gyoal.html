@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #FFDEB9;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Saloni Goel</h2>
+<p> JUST, come and get your favourite, and lovable Designs four your "HOME", "OFFICE", "PUBS","HOTELS",etc..
+  We have all variety of Interior Decores.</p>
+<header>
+  <h2>Company</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Kajaria</a></li>
+      <li><a href="#">Orient Bell</a></li>
+      <li><a href="#">Baja Title</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>THE AWESOME INTERIOR DESIGNERS</h1>
+    <p> WELCOME! TO THE AWESOME DESIGNERS</p>
+    <p> We have solution of all the confusions, as we provides desired collection of your choice and need.
+  we have vast collection of all the type of "Interior Designs"</p>
+  </article>
+</section>
+
+<footer>
+  <p>Contact us</p>
+</footer>
+
+</body>
+</html>
